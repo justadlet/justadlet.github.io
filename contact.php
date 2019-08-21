@@ -4,23 +4,23 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Hey! You have a message from your website! <justadlet.github.io>';
+$from = 'Demo contact form <adlet@github.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Adlet Zeineken <zeineken.adlet@gmail.com>';
+$sendTo = 'Demo contact form <zeineken.adlet@gmail.com>';
 
 // subject of the email
-$subject = 'New message from justadlet.github.io';
+$subject = 'Hi there! You have a message from your website!';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you as soon as possible!';
+$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'Sorry, there was an error while submitting the form. Please try again later';
+$errorMessage = 'There was an error while submitting the form. Please try again later';
 
 /*
  *  LET'S DO THE SENDING
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n\n\n\n";
+    $emailText = "You have a new message from your contact form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
