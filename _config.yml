@@ -4,6 +4,7 @@ github: [metadata]
    input: GFM
    hard_wrap: false
  future: true
+ timezone: TIMEZONE
  jailed: false
  theme: jekyll-theme-primer
  gfm_quirks: paragraph_end
