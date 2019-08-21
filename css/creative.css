@@ -235,19 +235,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/blur_astana_0.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-header.media_header {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/back.jpg");
+  background-image: url("../img/first.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -289,43 +277,6 @@ header.masthead p {
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 4rem;
-  }
-}
-
-header.media_header hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-header.media_header h1 {
-  font-size: 2rem;
-}
-
-header.media_header p {
-  font-weight: 300;
-}
-
-@media (min-width: 768px) {
-  header.media_header p {
-    font-size: 1.15rem;
-  }
-}
-
-@media (min-width: 992px) {
-  header.media_header {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.media_header h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.media_header h1 {
     font-size: 4rem;
   }
 }
