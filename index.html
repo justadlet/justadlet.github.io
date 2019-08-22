@@ -418,57 +418,49 @@
       </div>
     </div>
     
-    <form method="POST" action="https://formspree.io/zeineken.adlet@gmail.com">
-    <input type="email" name="email" placeholder="Your email">
-    <input type="name" name="name" placeholder="Full name">
-    <textarea name="message" placeholder="Message for me"></textarea>
-    <button type="submit">Submit</button>
-    </form>
+    
     <div class="container-fluid" id = "contact">
         <div class="row">
             <div class="col-lg-10 py-5 mx-auto mxw" id = "opacitycf">
                 <h1 class="text-dark py-2">Contact <span class="text-primary">Form</span></h1>
-                <form id="contact-form" method="post" action="contact.php" role="form">
+                <form id="contact-form" role="form" method="POST" action="https://formspree.io/zeineken.adlet@gmail.com">
                     <div class="messages"></div>
-                    <div class="controls">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="text-dark" for="form_name">Name</label>
-                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Full Name is required.">
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="text-dark" for="form_email">Email</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="text-dark" for="form_message">Message *</label>
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                    <div class="help-block with-errors"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="text-dark" for="form_name">Name</label>
+                                        <input id = "form_name" type="text" name="name" placeholder="Full name" class="form-control required="required" data-error="Full Name is required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="text-dark" for="form_email">Email</label>
+                                        <input id = "form_email" type="email" name="email" placeholder="Email Address" class="form-control" required="required" data-error="Valid email is required">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 text-center">
-                              <div class="g-recaptcha" data-sitekey="6Ld-3msUAAAAAIAA67580JkyhqhUw0ZplHOIRvZ8"></div>
-                              <div class="col-lg-8 mx-auto" id="button">
-                                  <input class = "btn btn-primary" id="submit_message" type="submit" name="submit" value="Submit" onclick="return callValidation();">
-                                  
-                              </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="text-dark" for="form_message">Message </label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <div class="g-recaptcha" data-sitekey="6Ld-3msUAAAAAIAA67580JkyhqhUw0ZplHOIRvZ8"></div>
+                                    
+                                    <div class="col-lg-8 mx-auto" id="button">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <!-- /.8 -->
         </div>
-        <!-- /.row-->
     </div>
     
     <section id="footer">
