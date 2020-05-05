@@ -40,6 +40,50 @@ hr {
   max-width: 1257px;
 }
 
+.scroll-down {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+
+.mouse {
+    width: 3px;
+    padding: 3px 10px;
+    height: 30px;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    right: 100;
+    opacity: .5;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 8px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation: scroll 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);    
+  }
+  90% {
+     transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .bg-gr {
   background-color: #EEEEEE; 
 }
